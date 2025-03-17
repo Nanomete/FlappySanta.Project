@@ -2,15 +2,14 @@ function Santa() {
     context = santagame.getContext('2d');
     const santa = new Image();
     santa.src = "https://pngfile.net/download/SohUt5aOrd4T3k8tCd1Z7xEkAStBAqz8176CY5Xg9zlFJcEkFqMPz4USHbDo0A1wDaxi93yMWq7E4JdKAdCykpc6m34mkuzDLTn1gxfwCs8rR5DpWRxQDq154K7mr8ziFNcKdjbDvBYIcenQXD62kf2OZMiy3DGoSkXsAMlcUJpn1SqpDRfJf6ieEmD3us0s0ErXJutM/large"
-    santaX = 100;
+    santaX = 10;
     santaDY = score = bestScore = 0;
-    santaSize = 103;
+    santaSize = 100;
     pipeWidth = topPipeBottomY = 70;
     interval = 19;
     santaY = 300;
     pipeGap = 200;
     canvasSize = pipeX = 750;
-    screenSize = 500;
     santagame.onclick = () => { santaDY = 8}
     setInterval(() => {
         context.fillStyle = "#b2ebf2";
